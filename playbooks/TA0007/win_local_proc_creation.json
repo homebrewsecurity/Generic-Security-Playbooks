@@ -1,0 +1,243 @@
+{
+    "dataset_id": "coun7er",
+    "dataset_version": "latest",
+    "title": "Discovery: Local Windows Process Creation",
+    "template_used": "",
+    "version": 1,
+    "created": "2025-12-03T02:02:47.833Z",
+    "updated": "2025-12-03T02:02:47.833Z",
+    "spec_version": "2.0.0",
+    "tech_to_items": {
+        "T1007": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1012": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1016": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1016.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1016.002": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1018": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0036",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1033": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1040": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1049": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0025",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0042",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1057": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1069": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1069.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1082": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1083": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1087": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1087.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1120": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1124": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1135": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1201": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1217": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1497.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1497.002": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1497.003": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1518": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1518.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1614": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1614.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1652": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "unmapped": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0003",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0001",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0009",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0010",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0011",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0012",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0013",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0017",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0019",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0031",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0039",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0040",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0043",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0045",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0052",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0062",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0100",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0112",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0131",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0140",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0157",
+                    "version": "1.0"
+                }
+            ]
+        }
+    },
+    "ignored_items": [
+        "CM0081",
+        "CM0156"
+    ]
+}
