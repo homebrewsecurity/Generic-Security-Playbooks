@@ -1,0 +1,12 @@
+CIS Benchmarks: https://www.cisecurity.org/cis-benchmarks
+DoD STIGS: https://www.cyber.mil/stigs/gpo
+Forest Druid: https://www.semperis.com/forest-druid/
+Purple Knight: https://www.semperis.com/purple-knight/
+Ping Castle: https://www.pingcastle.com/
+chiml: https://www.minasi.com/vista/chml.htm
+MS Compliance Toolkit w/ LGPO: https://www.microsoft.com/en-us/download/details.aspx?id=55319&msockid=156244b4ee896be312145295ef026a96
+MS Threat Modeling Tool: https://aka.ms/threatmodelingtool
+Windows CMD Commands: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
+Features On Demand: https://learn.microsoft.com/en-us/windows-server/get-started/server-core-app-compatibility-feature-on-demand?tabs=windows-update
+Just Enough Administration: https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/jea/overview?view=powershell-7.5
+More Hardening Steps: Refer to internal knowledge base
