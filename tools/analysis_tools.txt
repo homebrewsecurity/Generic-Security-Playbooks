@@ -1,0 +1,7 @@
+x64dbg: https://github.com/x64dbg/x64dbg
+Cutter: https://cutter.re/
+PEiD: https://www.softpedia.com/get/Programming/Packers-Crypters-Protectors/PEiD-updated.shtml
+InetSim: https://www.inetsim.org/index.html
+Sublime Text: https://www.sublimetext.com/
+Process Explorer: https://learn.microsoft.com/en-us/sysinternals/downloads/process-explorer
+Flare-Floss: https://github.com/mandiant/flare-floss
