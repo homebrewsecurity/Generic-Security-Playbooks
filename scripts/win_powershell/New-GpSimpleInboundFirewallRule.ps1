@@ -151,7 +151,7 @@ if ($EnableNTP)
 }
 
 # Enables DHCP service availability
-if ($EnableDNS)
+if ($EnableDHCP)
 {
     $DisplayName = "DHCP-UDP-$($GeneralParams.Direction)-$($GeneralParams.Action)-$($GeneralParams.Profile)"
     New-NetFirewallRule @GeneralParams -LocalPort 67 -RemotePort 68 -Protocol UDP
