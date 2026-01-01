@@ -1,4 +1,9 @@
-﻿[CmdletBinding()]
+﻿#Requires -RunAsAdministrator
+
+# Script written by Logan Bennett
+# Sets up simple firewall rules allowing connections from RFC1918 IP addresses; edit as needed
+
+[CmdletBinding()]
 Param(
     [switch]$EnableRPC,
     [switch]$EnableSMB,
@@ -146,7 +151,7 @@ if ($EnableNTP)
 }
 
 # Enables DHCP service availability
-if ($EnableNTP)
+if ($EnableDNS)
 {
     $DisplayName = "DHCP-UDP-$($GeneralParams.Direction)-$($GeneralParams.Action)-$($GeneralParams.Profile)"
     New-NetFirewallRule @GeneralParams -LocalPort 67 -RemotePort 68 -Protocol UDP
