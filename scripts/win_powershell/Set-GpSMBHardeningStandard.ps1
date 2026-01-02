@@ -8,7 +8,7 @@
 [CmdletBinding()]
 Param(
     [switch]$ServerConfig,
-    [siwtch]$ClientConfig
+    [switch]$ClientConfig
 )
 
 Function Remove-SMBVersion1
