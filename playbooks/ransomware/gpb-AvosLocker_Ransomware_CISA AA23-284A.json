@@ -1,0 +1,139 @@
+{
+    "dataset_id": "coun7er",
+    "dataset_version": "latest",
+    "title": "AvosLocker Ransomware | CISA AA23-284A",
+    "template_used": "",
+    "version": 1,
+    "created": "2026-01-02T17:31:39.011Z",
+    "updated": "2026-01-02T17:31:39.011Z",
+    "spec_version": "2.0.0",
+    "tech_to_items": {
+        "T1047": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0004",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0036",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0038",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0039",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0045",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1059.001": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0019",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0031",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1059.003": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1133": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0148",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0149",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1505.003": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0106",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1555": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0029",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0033",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0061",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0067",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0135",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1572": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0010",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0025",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0042",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0062",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "unmapped": {
+            "confidence": "suspected",
+            "items": []
+        }
+    },
+    "ignored_items": []
+}

@@ -1,0 +1,98 @@
+{
+    "dataset_id": "coun7er",
+    "dataset_version": "latest",
+    "title": "MedusaLocker | CISA AA22-181A",
+    "template_used": "",
+    "version": 1,
+    "created": "2026-01-02T18:46:58.123Z",
+    "updated": "2026-01-02T18:46:58.123Z",
+    "spec_version": "2.0.0",
+    "tech_to_items": {
+        "T1133": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0148",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0149",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1566": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0004",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0009",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0035",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0059",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1059.001": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0019",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0031",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1562.009": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1486": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0097",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1490": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0045",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0097",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "unmapped": {
+            "confidence": "suspected",
+            "items": []
+        }
+    },
+    "ignored_items": []
+}

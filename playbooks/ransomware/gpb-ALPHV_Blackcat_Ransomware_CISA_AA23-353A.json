@@ -1,0 +1,80 @@
+{
+    "dataset_id": "coun7er",
+    "dataset_version": "latest",
+    "title": "ALPHV Blackcat Ransomware | CISA AA23-353A",
+    "template_used": "",
+    "version": 1,
+    "created": "2026-01-02T16:21:44.392Z",
+    "updated": "2026-01-02T16:21:44.392Z",
+    "spec_version": "2.0.0",
+    "tech_to_items": {
+        "T1555": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0029",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0033",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0061",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0067",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0135",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1557": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0010",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0142",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1558": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0050",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1586": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1598": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "unmapped": {
+            "confidence": "suspected",
+            "items": []
+        }
+    },
+    "ignored_items": []
+}

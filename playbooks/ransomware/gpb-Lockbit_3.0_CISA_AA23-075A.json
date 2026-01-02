@@ -1,0 +1,430 @@
+{
+    "dataset_id": "coun7er",
+    "dataset_version": "latest",
+    "title": "Lockbit 3.0 | CISA AA23-075A",
+    "template_used": "",
+    "version": 1,
+    "created": "2026-01-02T17:56:55.814Z",
+    "updated": "2026-01-02T17:56:55.814Z",
+    "spec_version": "2.0.0",
+    "tech_to_items": {
+        "T1003.001": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0004",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0087",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0088",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0090",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1021.001": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0025",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0042",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1027": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0004",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1046": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0052",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1048": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0003",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1070.004": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1071.002": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1072": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0067",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1078": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0020",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0025",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0034",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0042",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0043",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0044",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0060",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0063",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0080",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0084",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0092",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0104",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0112",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0114",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0118",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0122",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0124",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0125",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0126",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0128",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0133",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0135",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0136",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0145",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0153",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1082": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0081",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1133": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0148",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0149",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1189": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0035",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0047",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0059",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0067",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1190": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0014",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0037",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0067",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0106",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0133",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0148",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0149",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1480.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1485": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0139",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1486": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0097",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1489": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0003",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1490": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0045",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0097",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1491.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1547": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0027",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1566": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0004",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0009",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0035",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0059",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1567": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1567.002": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1572": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0010",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0025",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0042",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0062",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1614.001": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "unmapped": {
+            "confidence": "suspected",
+            "items": []
+        }
+    },
+    "ignored_items": []
+}

@@ -1,0 +1,291 @@
+{
+    "dataset_id": "coun7er",
+    "dataset_version": "latest",
+    "title": "Black Basta Ransomware | CISA AA24-131A",
+    "template_used": "",
+    "version": 1,
+    "created": "2026-01-02T16:07:13.106Z",
+    "updated": "2026-01-02T16:07:13.106Z",
+    "spec_version": "2.0.0",
+    "tech_to_items": {
+        "T1036": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0003",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0022",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0024",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1059.001": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0019",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0031",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1068": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0004",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0058",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0067",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1078": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0020",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0025",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0034",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0042",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0043",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0044",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0060",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0063",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0080",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0084",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0092",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0104",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0112",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0114",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0118",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0122",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0124",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0125",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0126",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0128",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0133",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0135",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0136",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0145",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0153",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1190": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0014",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0037",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0067",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0106",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0133",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0148",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0149",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1204": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0027",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0035",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0046",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1486": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0097",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1490": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0045",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0097",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1562.001": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0003",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0058",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0095",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0110",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1566": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0004",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0009",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0035",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0059",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1566.004": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "unmapped": {
+            "confidence": "suspected",
+            "items": []
+        }
+    },
+    "ignored_items": []
+}

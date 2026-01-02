@@ -1,0 +1,158 @@
+{
+    "dataset_id": "coun7er",
+    "dataset_version": "latest",
+    "title": "Hive Ransomware | CISA AA22-321A",
+    "template_used": "",
+    "version": 1,
+    "created": "2026-01-02T18:06:10.255Z",
+    "updated": "2026-01-02T18:06:10.255Z",
+    "spec_version": "2.0.0",
+    "tech_to_items": {
+        "T1133": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0065",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0148",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0149",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1566.001": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0002",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0055",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1190": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0014",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0037",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0067",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0093",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0106",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0133",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0148",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0149",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1562": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0003",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1059": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0127",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1490": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0045",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0097",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1070": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0003",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1112": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0086",
+                    "version": "1.0"
+                },
+                {
+                    "id": "CM0129",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "T1537": {
+            "confidence": "suspected",
+            "items": []
+        },
+        "T1486": {
+            "confidence": "suspected",
+            "items": [
+                {
+                    "id": "CM0097",
+                    "version": "1.0"
+                }
+            ]
+        },
+        "unmapped": {
+            "confidence": "suspected",
+            "items": []
+        }
+    },
+    "ignored_items": []
+}
