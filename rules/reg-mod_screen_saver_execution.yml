@@ -1,0 +1,47 @@
+title: Execution via Screen Saver Registry Modification
+id: 0d6eec58-05ed-494b-a910-f6232344bb32
+status: experimental
+description: This rule detects creation and modification of the scrnsave.exe registry key.
+
+author: Logan Bennett
+date: 2026-03-02
+modified: 2026-03-02
+
+references:
+  - https://attack.mitre.org/techniques/T1546/002/
+
+tags:
+  - attack.privilege-escalation
+  - attack.t1546.002
+
+logsource:
+    product: windows
+    service: sysmon
+
+detection:
+    registry_value_selection:
+      EventID: 13
+      EventType: SetValue
+      TargetObject:
+        - 'HKU\\*\Control Panel\Desktop\SCRNSAVE.exe'
+      Details|contains:    # Editied details to include strings beyond just .scr and .exe files to look for other attempt indicators, however they are not likely to execute
+        - '.scr'
+        - '.exe'
+        - '.dll'
+        - '.ps1'
+        - '.vbs'
+        - '.cmd'
+    registry_rename_selection:
+      EventID: 14
+      EventType: RenameKey
+      NewName|endswith: 'SCRNSAVE.exe'
+    registry_value_exclusion1:
+      Image: 'C:\Windows\System32\svchost.exe'
+      User: 'NT AUTHORITY\SYSTEM'
+      Details: '%%systemroot%%\system32\logon.scr' 
+
+    condition: (registry_value_selection and not registry_value_exclusion1) or (registry_rename_selection)
+
+falsepositives:
+    - Legitimate programs modifying screens saver data
+level: medium
