@@ -1,0 +1,63 @@
+title: Suspicious Browser Download via Alternate Data Stream
+id: ef58863e-3c39-4092-987d-1165a4407ed0
+status: experimental
+description: |
+  This rule detects suspicious file type downloads via common browsers using
+  the Zone.Identifier invariant alternate data stream.
+
+author: Logan Bennett
+date: 2026-03-02
+modified: 2026-03-02
+
+references:
+  - https://ourcodeworld.com/articles/read/2412/what-is-zoneidentifier-windows-meaning-purpose-and-how-to-remove-it-safely
+  - https://attack.mitre.org/techniques/T1189/
+tags:
+  - attack.initial-access
+  - attack.t1189
+
+logsource:
+    product: windows
+    service: sysmon
+
+detection:
+    filestream_selection:
+        EventID: 15
+        Image|endswith:
+          - 'brave.exe'
+          - 'chrome.exe'
+          - 'firefox.exe'
+          - 'msedge.exe' 
+          - 'launcher.exe'
+          - 'opera.exe'
+          - 'System'
+        TargetFilename|endswith:
+          - '.exe:Zone.Identifier'
+          - '.msi:Zone.Identifier'
+          - '.zip:Zone.Identifier'
+          - '.gzip:Zone.Identifier'
+          - '.gz:Zone.Identifier'
+          - '.hta:Zone.Identifier'
+          - '.bat:Zone.Identifier'
+          - '.cmd:Zone.Identifier'
+          - '.ps1:Zone.Identifier'
+          - '.psm1:Zone.Identifier'
+          - '.psd1:Zone.Identifier'
+          - '.scr:Zone.Identifier'
+          - '.sys:Zone.Identifier'
+          - '.ini:Zone.Identifier'
+          - '.inf:Zone.Identifier'
+          - '.iso:Zone.Identifier'
+          - '.img:Zone.Identifier'
+          - '.vhd:Zone.Identifier'
+          - '.vhdx:Zone.Identifier'
+          - '.vmdk:Zone.Identifier'
+          - '.rar:Zone.Identifier'
+          - '.7z:Zone.Identifier'
+        Contents|contains|all:
+          - '[ZoneTransfer]'
+          - 'ZoneId=3'
+    condition: filestream_selection
+falsepositives:
+    - Users downloading legitimate files
+level: medium
