@@ -1,0 +1,16 @@
+SIGMA: https://github.com/SigmaHQ/sigma
+SigCoverter: https://sigconverter.io/
+MITRE CAR: https://car.mitre.org/
+MITRE Data Sources: https://attack.mitre.org/datasources/
+MITRE MBC: https://github.com/MBCProject/mbc-markdown#malware-objective-descriptions
+Detection FYI: https://detection.fyi/
+Threat Hunters Playbook: https://threathunterplaybook.com/intro.html
+XCyclopedia: https://strontic.github.io/xcyclopedia/
+Snort: https://www.snort.org/
+Zeek: https://github.com/zeek/zeek
+Wazuh: https://wazuh.com/
+Sysmon: https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+SysmonForLinux: https://github.com/microsoft/SysmonForLinux
+Auditd Reference: https://github.com/Neo23x0/auditd
+LOLBAS: https://lolbas-project.github.io/#
+
