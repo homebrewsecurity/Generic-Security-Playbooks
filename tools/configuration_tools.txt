@@ -9,4 +9,4 @@ MS Threat Modeling Tool: https://aka.ms/threatmodelingtool
 Windows CMD Commands: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands
 Features On Demand: https://learn.microsoft.com/en-us/windows-server/get-started/server-core-app-compatibility-feature-on-demand?tabs=windows-update
 Just Enough Administration: https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/jea/overview?view=powershell-7.5
-More Hardening Steps: Refer to internal knowledge base
+
