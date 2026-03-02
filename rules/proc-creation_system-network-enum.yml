@@ -1,0 +1,55 @@
+title: Local Network Enumeration
+id: 556f5aa0-4a93-4626-8c32-30c2cd46415c
+status: experimental
+description: This rule detects local network enumeration through the execution of local binaries.
+
+author: Logan Bennett
+date: 2026-03-02
+modified: 2026-03-02
+
+references:
+  - https://attack.mitre.org/techniques/T1016/
+  - https://studylib.net/doc/26326495/ben-clark--nick-downer-rtfm--red-team-field-manual-v2-ind...
+
+tags:
+  - attack.discovery
+  - attack.t1016
+
+logsource:
+    product: windows
+    service: sysmon
+
+detection:
+    event_selection:
+      EventID: 1
+      OriginalFileName:
+        - 'ipconfig.exe'
+        - 'netsh.exe'
+        - 'arp.exe'
+        - 'nslookup.exe'
+        - 'netstat.exe'
+        - 'route.exe'
+        - 'ping.exe'
+        - 'tracert.exe'
+    argument_selection:
+      CommandLine|contains:
+        - '/all'
+        - '/displaydns'
+        - '-noa'
+        - '-nao'
+        - '-oan'
+        - '-ona'
+        - '-a'
+        - 'type=srv'
+        - 'wlan show'
+        - 'wlan export'
+        - 'firewall show'
+        - 'interface ip'
+        - 'print'
+    condition: (event_selection and argument_selection)
+falsepositives:
+    - IT admins
+    - IT helpdesk
+    - Power Users
+    - Legitimate programs
+level: low
