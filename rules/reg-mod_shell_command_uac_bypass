@@ -1,0 +1,49 @@
+title: UAC Bypass via Open-Shell-Command Registry Modification
+id: 92624b1a-ffc2-48bd-a505-d0942b911bac
+status: experimental
+description: | 
+  This rule detects the creation of DelegateExecute registry key and
+  modification to the (default) registry key value, commonly used to set up
+  UAC bypass or privilege escalation with executables such as fodhelper.exe
+
+author: Logan Bennett
+date: 2026-03-02
+modified: 2026-03-02
+
+references:
+  - https://attack.mitre.org/techniques/T1548/002/
+  - https://tcm-sec.com/bypassing-defender-the-easy-way-fodhelper/
+
+tags:
+  - attack.defense-evasion
+  - attack.t1548.002
+
+logsource:
+    product: windows
+    service: sysmon
+
+detection:
+    registry_create_selection:
+      EventID: 12
+      EventType: 'CreateKey'
+      TargetObject|endswith:
+        - '\Shell\Open\Command\DelegateExecute'
+    registry_value_set:
+      EventID: 13
+      EventType: 'SetValue'
+      TargetObject|endswith:
+        - '\Shell\Open\Command\(default)'
+      Details|contains:
+        - '.exe'
+        - '.dll'
+        - '.ps1'
+        - '.cmd'
+        - '.vbs'
+        - '.cpl'
+        - '.scr'
+        - '.msi'
+        - '.bat'
+    condition: registry_create_selection or registry_value_set
+falsepositives:
+    - Legitimate tools modifying related paths
+level: medium
