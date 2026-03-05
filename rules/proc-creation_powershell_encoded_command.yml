@@ -1,0 +1,35 @@
+title: PowerShell Encoded Command
+id: fb0661d4-c322-49b3-bc13-2c1396ada2f5
+status: experimental
+description: |
+  This rule detects PowerShell encoded command execution via Sysmon EventID 1
+
+author: Logan Bennett
+date: 2026-03-05
+modified: 2026-03-05
+
+references:
+  - https://attack.mitre.org/techniques/T1059/001/
+  - https://attack.mitre.org/techniques/T1027/010/
+tags:
+  - attack.execution
+  - attack.defense-evasion
+  - attack.t1059.001
+  - attack.t1027.010
+
+logsource:
+    product: windows
+    service: sysmon
+
+detection:
+    event_selection:
+      EventID: 1
+      OriginalFileName|contains:
+        - 'powershell.exe'
+        - 'pwsh.exe'
+      CommandLine|re|i:
+        - '.*\-e(|n*c*o*d*e*d*c*o*m*m*a*n*d) [a-z+=/0-9]{6,}.*'
+    condition: event_selection
+falsepositives:
+    - Unlikely; vulnerability scaners and system administrators
+level: high
