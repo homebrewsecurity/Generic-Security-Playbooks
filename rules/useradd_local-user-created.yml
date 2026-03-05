@@ -1,0 +1,36 @@
+title: Local User Account Creation via Native Logging
+id: ba085de5-7b20-4a37-9494-10fee4c87c49
+status: experimental
+description: This rule detects native creation of user accounts via Event ID 4720.
+
+author: Logan Bennett
+date: 2026-03-05
+modified: 2026-03-05
+
+references:
+  - https://attack.mitre.org/techniques/T1136/001/
+  - https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4720
+tags:
+  - attack.persistence
+  - attack.t1136.001
+
+logsource:
+    product: windows
+    service: security
+
+detection:
+    event_selection:
+      EventID: 4720
+    event_exclusion:
+      LogSource:
+        - 'domain_controller1'
+        - 'domain_controller2'
+    condition: event_selection and not event_exclusion
+
+falsepositives:                                           # Tuning is necessary for most environments. For example, UAC value 0x15 by trusted sources in the network may be considered false posiitves
+    - Tuning is necessary for most environments
+    - On-boarding personnel
+    - System Administrators
+    - Network Owners
+    - Other authorized personnel 
+level: medium
