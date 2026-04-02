@@ -1,0 +1,38 @@
+title: ADS Binary Execution
+id: dc5b1128-6676-4685-8138-b6ba501bef43
+status: test
+description: |
+  This rule detects the execution of a binary stored in an alternate data stream.
+  Attackers use alternate data streams as a defense evasion tactic to hide binaries in unsuspecting files.
+
+Author: Logan Bennett
+date: 2026-04-01
+modified: 2026-04-01
+
+#### Unit Tests ####
+# wmic process call create '"C:\Testdirectory\benignfile.txt:evilbinary.exe"'
+# forfiles /p c:\windows\system32 /m notepad.exe /c "c:\Testdirectory\benignfile.txt:evilbinary.exe"
+# Invoke-CimMethod -Class Win32_Process -Method Create -Arguments @{CommandLine="C:\Testdirectory\benignfile.txt:evilbinary.exe"}
+
+references:
+  - https://attack.mitre.org/techniques/T1564/004/
+  - https://gist.github.com/api0cradle/cdd2d0d0ec9abb686f0e89306e277b8f
+
+tags:
+  - attack.defense-evasion
+  - attack.t1564.004
+
+logsource:
+  product: windows
+  service: sysmon
+
+detection:
+  event_selection:
+    Event ID: 1
+    Image|contains: ":*:"
+  condition: event_selection
+
+falsepositives:
+  - Unlikely; process creation from an alternate data stream is abnormal
+  
+level: high
