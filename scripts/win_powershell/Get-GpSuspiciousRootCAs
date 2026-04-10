@@ -1,0 +1,55 @@
+# Author: Logan Bennett
+# Date: 4/10/2026
+
+# This script checks the currently installed/trusted root certificate authorities and compares them to the most updated
+# list of approved Microsoft CAs. The output is a list of untrusted root CAs according to Microsoft's list
+
+# Parameters
+[CmdletBinding(DefaultParameterSetName="localuser")]
+Param(
+    [Parameter(ParameterSetName="localmachine")]
+    [Switch]$LocalMachine,
+    [Parameter(ParameterSetName="localuser")]
+    [Switch]$CurrentUser
+)
+
+# Sets the error action
+$ErrorActionPreference = 'Stop'
+
+if (-not ($LocalMachine -or $CurrentUser))
+{
+    Write-Error "Invalid usage: Please use either the -LocalMachine or -CurrentUser switches with this script."
+}
+
+# Gets the currently installed CAs on the local machine
+$InstalledRootCAs = Get-ChildItem 'Cert:\LocalMachine\Root\'
+$CUInstalledRootCAs = Get-ChildItem 'Cert:\CurrentUser\Root\'
+$MicrosoftRootCACSV = (Invoke-WebRequest -Method GET -Uri 'https://ccadb.my.salesforce-sites.com/microsoft/IncludedCACertificateReportForMSFTCSV' -UseBasicParsing).Content | ConvertFrom-Csv
+
+# Declares suspicious array (very sus ;D )
+$SuspiciousArray = @()
+
+# Begins checking certificates
+if ($LocalMachine)  # Indexes the suspicious certs from the local machine
+{
+    foreach ($InstalledRootCA in $InstalledRootCAs)
+    {
+        if (-not ($InstalledRootCa.Thumbprint -iin $MicrosoftRootCACSV."SHA-1 Fingerprint"))
+        {
+            $SuspiciousArray += $InstalledRootCA
+        }
+    }
+}
+elseif ($CurrentUser)  # Does so for the current user
+{
+    foreach ($InstalledRootCA in $CUInstalledRootCAs)
+    {
+        if (-not ($InstalledRootCa.Thumbprint -iin $MicrosoftRootCACSV."SHA-1 Fingerprint"))
+        {
+            $SuspiciousArray += $InstalledRootCA
+        }
+    }
+}
+
+# Prints the output to pipe into any other command
+$SuspiciousArray
