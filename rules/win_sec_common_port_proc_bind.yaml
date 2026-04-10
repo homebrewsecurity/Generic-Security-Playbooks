@@ -1,0 +1,44 @@
+title: Process Bind to Local Common Port
+id: f68d0761-a9e0-4c89-8c75-eb5a074a00e2
+status: experimental
+description: This rule detects processes binding to common ports used by C2 and lateral movement infrastructure. As-is, this rule requires tuning.
+
+author: Logan Bennett
+date: 2026-04-10
+modified: 2026-04-10
+
+references:
+  - https://attack.mitre.org/techniques/T0885/
+tags:
+  - attack.command-and-control
+  - attack.t0885
+
+logsource:
+    product: windows
+    service: security
+
+detection:
+    event_selection:
+      EventID: 5158
+      SourcePort:
+        - 21
+        - 22
+        - 23
+        - 80
+        - 8080
+        - 443
+        - 8443
+        - 3389
+        - 67
+        - 68
+        - 161
+        - 162
+        - 445
+        - 4444
+        - 50050
+        - 31337
+    condition: event_selection
+falsepositives:
+  - Legitimate processes binding to these ports, such as OpenSSH daemon, DNS servers, etc.
+  - Envrionment tuning is highly recommended
+level: low  # Low level as-is, otherwise could be raised to medium/high with proper tuning.
