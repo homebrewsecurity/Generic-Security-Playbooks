@@ -28,7 +28,7 @@ detection:
         - 'powershell.exe'
         - 'pwsh.exe'
       CommandLine|re|i:
-        - '.*\-e(|[ncodeman]+)\s[a-z+=0-9]{6,}.*'
+        - '.*\-e(|[ncodema]+)\s[a-z+=0-9]{6,}.*'
     condition: event_selection
 falsepositives:
     - Unlikely; vulnerability scaners and system administrators
